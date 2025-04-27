@@ -11,14 +11,22 @@
       height: 100%;
       overflow: hidden;
     }
+    #message {
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
   </style>
 </head>
 <body>
+  <div id="message">
+    <h2>Redirecting to YummyPooch...</h2>
+  </div>
   <script>
-    window.onload = function() {
+    // Simple redirect after a short delay
+    setTimeout(function() {
       window.location.href = "https://www.yummypooch.com";
-    }
+    }, 500);
   </script>
-  <p>Redirecting to YummyPooch...</p>
 </body>
 </html>
