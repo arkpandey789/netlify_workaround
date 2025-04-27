@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YummyPooch Redirect</title>
+  <title>YummyPooch Embed</title>
   <style>
     body, html {
       margin: 0;
@@ -11,22 +11,14 @@
       height: 100%;
       overflow: hidden;
     }
-    #message {
-      text-align: center;
-      padding: 20px;
-      font-family: Arial, sans-serif;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div id="message">
-    <h2>Redirecting to YummyPooch...</h2>
-  </div>
-  <script>
-    // Simple redirect after a short delay
-    setTimeout(function() {
-      window.location.href = "https://www.yummypooch.com";
-    }, 500);
-  </script>
+  <iframe src="https://www.yummypooch.com" allowfullscreen></iframe>
 </body>
 </html>
